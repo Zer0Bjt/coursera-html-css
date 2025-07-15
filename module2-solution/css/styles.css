@@ -56,9 +56,16 @@ h1 {
 
 /*Desktop view */
 @media (min-width:992px) {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    padding: 0 2%;
+  }
+
   .section {
-    width:30%;
-    margin: 1.66%;
+    width: 32%;
+    margin: 0;
   }
 }
 
