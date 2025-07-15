@@ -9,35 +9,39 @@ body {
 
 h1 {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 30px 0;
   font-size: 2em;
 }
 
 .container {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 0 10px;
+ text-align: center;
+  width: 100%;
 }
 
 .section {
+  display: inline-block;
+  vertical-align: top;
+  width: 30%;
+  margin: 1.66%;
+  padding: 20px;
   border: 1px solid black ;
-  background-color: #eaeaea;
-  padding: 40px 20px 20px 20px;
-  margin: 15px;
+  background-color: #e9e9e9;
+  height: 250px;
   position: relative;
+  text-align: left;
 }
 
 .section-title {
   position: absolute;
   top: 0;
   right: 0;
-  padding; 5px 10px;
+  padding: 5px 10px;
   border: 1px solid black;
   font-weight: bold;
 }
 
 .chicken .section-title {
-  background-color:#e89cae;
+  background-color: #f9b3b3;
 }
 
 .beef .section-title {
@@ -51,10 +55,8 @@ h1 {
 /*Desktop view */
 @media (min-width:992px) {
   .section {
-    width:33.33%;
-    float: left;
-    height: 250px;
-    margin: 1%;
+    width:30%;
+    margin: 1.66%;
   }
 }
 
@@ -62,8 +64,6 @@ h1 {
 @media (min-width:768px) and (max-width: 991px) {
   .section {
     width: 48%;
-    float:left;
-    height: 250px;
     margin: 1%;
   }
 }
@@ -71,14 +71,14 @@ h1 {
 
 
   .section.sushi {
-  width: 98%;
+  width: 95%;
   }
 }
 
 /*Mobile view*/
 @media (max-width:767px) {
   .section {
-    width:100%;
-    float: none;
+    width:90%;
+    margin: 5%;
   }
 }
